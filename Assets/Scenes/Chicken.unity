@@ -414,6 +414,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DayCount: {fileID: 1357815774}
   Count: 0
+  time: 0
+  AnimName:
+  - LayingEggs
+  - SittingOnEggs
+  - EggsHatching
 --- !u!1 &1357815772
 GameObject:
   m_ObjectHideFlags: 0
