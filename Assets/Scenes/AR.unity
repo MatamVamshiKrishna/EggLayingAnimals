@@ -776,6 +776,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chicken Life Cycle
       objectReference: {fileID: 0}
+    - target: {fileID: 7337482124906028260, guid: 1cb52ca0afe29481e886d0d4554afab2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7337482124906028261, guid: 1cb52ca0afe29481e886d0d4554afab2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -863,7 +868,19 @@ MonoBehaviour:
   - {fileID: 401327269}
   Defaultcolor: []
   Activatedcolor: {fileID: 2100000, guid: fb6a97edd6d64c341804938b8b009def, type: 2}
-  time: 0
+  time: 2
+--- !u!114 &726697982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 726697979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf58ad616d824abbbdd52eeeeb7c81f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1032787755
 GameObject:
   m_ObjectHideFlags: 0
