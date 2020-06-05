@@ -14,6 +14,7 @@ public class LifeCycle : MonoBehaviour
     public Text DayCount;
     public float Count = 0;
     public float time;
+    public string[] AnimName;
 
     private bool Chick = false;
     private Animator animator;
@@ -25,14 +26,14 @@ public class LifeCycle : MonoBehaviour
     }
         void Update()
     {
-        if (animator.GetCurrentAnimatorStateInfo(0).IsName("LayingEggs"))
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName(AnimName[0]))
         {
             Count = 1;
             DayCount.text = "Day :" + Count;
             time = Time.time;
         }
 
-        if (animator.GetCurrentAnimatorStateInfo(0).IsName("SittingOnEggs"))
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName(AnimName[1]))
         {
             if(Chick == false)
             {
@@ -59,7 +60,7 @@ public class LifeCycle : MonoBehaviour
            
            
         }
-        if (animator.GetCurrentAnimatorStateInfo(0).IsName("EggsHatching"))
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName(AnimName[2]))
         {
             Count = 22;
             DayCount.text = "Day :" + Count;
