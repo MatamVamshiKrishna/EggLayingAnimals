@@ -324,7 +324,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1802101397
 RectTransform:
   m_ObjectHideFlags: 0
@@ -486,6 +486,48 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "Chicken: The adult chicken, also called a hen, is able to reproduce by
     laying eggs.\r"
+--- !u!64 &4971402371729407624
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1653406052855011544}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7404635968004422706, guid: 900cd723f0227364c8156666195f4356, type: 3}
+--- !u!64 &1439017609328126294
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1653406052899577393}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2124705421725058983, guid: 7173ca6dc144ba44f82c91491faa4ffd, type: 3}
+--- !u!64 &7754973800505377503
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1653406053718237671}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3544989449648645972, guid: 6cca1659cf9ab1e47aa1454871baac69, type: 3}
 --- !u!1 &2535313976725788988
 GameObject:
   m_ObjectHideFlags: 0
@@ -805,7 +847,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1476325197616559809
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1133,7 +1175,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5496644972690714181
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1560,6 +1602,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6cca1659cf9ab1e47aa1454871baac69, type: 3}
+--- !u!1 &1653406053718237671 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 6cca1659cf9ab1e47aa1454871baac69,
+    type: 3}
+  m_PrefabInstance: {fileID: 7337482124545784046}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2353497850434671604 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 6cca1659cf9ab1e47aa1454871baac69,
@@ -1661,6 +1709,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 7337482124800296760}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1653406052899577393 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 7173ca6dc144ba44f82c91491faa4ffd,
+    type: 3}
+  m_PrefabInstance: {fileID: 7337482124800296760}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7337482124890997201
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1753,6 +1807,12 @@ PrefabInstance:
 --- !u!4 &2353497850764176075 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 900cd723f0227364c8156666195f4356,
+    type: 3}
+  m_PrefabInstance: {fileID: 7337482124890997201}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1653406052855011544 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 900cd723f0227364c8156666195f4356,
     type: 3}
   m_PrefabInstance: {fileID: 7337482124890997201}
   m_PrefabAsset: {fileID: 0}
