@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: hair_unity
+  m_Name: butterfly_Albedo 5
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -40,11 +40,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-<<<<<<< HEAD
-        m_Texture: {fileID: 2800000, guid: 0b78921e8b297794a96179d280213af0, type: 3}
-=======
-        m_Texture: {fileID: 2800000, guid: eae13b46864b43943b232edf7821b954, type: 3}
->>>>>>> f32b819c88a785b708318a62a2b90ac0eb98d372
+        m_Texture: {fileID: 2800000, guid: bfab7ec2996719d42950a4d5697c609c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
