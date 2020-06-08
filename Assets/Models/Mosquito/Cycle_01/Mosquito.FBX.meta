@@ -3,10 +3,15 @@ guid: f1ac12fdf2889a14ab02627f86551cb0
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u6BDB"
+    second: {fileID: 2100000, guid: 9be31877a9f37df44b468ea6ff166470, type: 2}
   materials:
     materialImportMode: 2
-    materialName: 0
+    materialName: 1
     materialSearch: 1
     materialLocation: 0
   animations:
