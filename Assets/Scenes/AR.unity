@@ -326,6 +326,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 40.562, y: -99.796005, z: 15.655001}
+--- !u!21 &132966423
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'markerMaterial
+
+    15354'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: bbe1c81baafc4468914fb516ba59dda0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1 &175539699
 GameObject:
   m_ObjectHideFlags: 0
@@ -397,6 +425,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7337482124906028261, guid: 1cb52ca0afe29481e886d0d4554afab2,
     type: 3}
   m_PrefabInstance: {fileID: 726697978}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &588195035 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 8511089877565592281, guid: 1cb52ca0afe29481e886d0d4554afab2,
+    type: 3}
+  m_PrefabInstance: {fileID: 874637892}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &681828925
 GameObject:
@@ -921,6 +955,12 @@ MeshRenderer:
     type: 3}
   m_PrefabInstance: {fileID: 726697978}
   m_PrefabAsset: {fileID: 0}
+--- !u!23 &734733381 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 284160700469056105, guid: 1cb52ca0afe29481e886d0d4554afab2,
+    type: 3}
+  m_PrefabInstance: {fileID: 874637892}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &787631539
 GameObject:
   m_ObjectHideFlags: 0
@@ -1040,6 +1080,18 @@ PrefabInstance:
       propertyPath: m_FontData.m_FontSize
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 726697981, guid: 1cb52ca0afe29481e886d0d4554afab2, type: 3}
+      propertyPath: Arrows.Array.data[0]
+      value: 
+      objectReference: {fileID: 734733381}
+    - target: {fileID: 726697981, guid: 1cb52ca0afe29481e886d0d4554afab2, type: 3}
+      propertyPath: Arrows.Array.data[1]
+      value: 
+      objectReference: {fileID: 588195035}
+    - target: {fileID: 726697981, guid: 1cb52ca0afe29481e886d0d4554afab2, type: 3}
+      propertyPath: Arrows.Array.data[2]
+      value: 
+      objectReference: {fileID: 953916533}
     - target: {fileID: 1116435102832997714, guid: 1cb52ca0afe29481e886d0d4554afab2,
         type: 3}
       propertyPath: m_Sprite
@@ -1234,6 +1286,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 874637892}
   m_PrefabAsset: {fileID: 0}
+--- !u!23 &953916533 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 7102608160389895087, guid: 1cb52ca0afe29481e886d0d4554afab2,
+    type: 3}
+  m_PrefabInstance: {fileID: 874637892}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1002846935
 GameObject:
   m_ObjectHideFlags: 0
@@ -1281,7 +1339,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1485516291}
+  - {fileID: 132966423}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1888,34 +1946,6 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!21 &1485516291
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'markerMaterial
-
-    16714'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: bbe1c81baafc4468914fb516ba59dda0, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1 &1544439159
 GameObject:
   m_ObjectHideFlags: 0
