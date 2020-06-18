@@ -826,6 +826,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: butterfly
       objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 6d05e52ea28303a4ea7937a97ee2fa49, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 6d05e52ea28303a4ea7937a97ee2fa49, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.71
