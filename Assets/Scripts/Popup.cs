@@ -10,23 +10,26 @@ public class Popup : MonoBehaviour
     private void Update()
     {
 #if UNITY_EDITOR
-        if (selected != null)
+        if(Input.GetMouseButtonDown(0))
         {
-            selected.GetChild(0).transform.gameObject.SetActive(false);
-            selected = null;
-        }
-
-        var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hit;
-        if (Physics.Raycast(ray, out hit))
-        {
-
-            var _selected = hit.transform;
-            if (_selected.CompareTag(Tag))
+            if (selected != null)
             {
-                _selected.GetChild(0).transform.gameObject.SetActive(true);
-                selected = _selected;
+                selected.GetChild(0).transform.gameObject.SetActive(false);
+                selected = null;
+            }
 
+            var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+            if (Physics.Raycast(ray, out hit))
+            {
+
+                var _selected = hit.transform;
+                if (_selected.CompareTag(Tag))
+                {
+                    _selected.GetChild(0).transform.gameObject.SetActive(true);
+                    selected = _selected;
+
+                }
             }
         }
 
@@ -55,6 +58,11 @@ public class Popup : MonoBehaviour
             }
         }
 #endif
+    }
+    public void OnClickCloseButton()
+    {
+        selected.GetChild(0).transform.gameObject.SetActive(false);
+       
     }
 }
 
