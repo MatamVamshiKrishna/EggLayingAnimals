@@ -2,8 +2,16 @@ fileFormatVersion: 2
 guid: 7ad0329a875d59240832db95f99f8826
 ModelImporter:
   serializedVersion: 19300
-  internalIDToNameTable: []
-  externalObjects: {}
+  internalIDToNameTable:
+  - first:
+      74: 1827226128182048838
+    second: Take 001
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 12268_banjofrog_
+    second: {fileID: 2100000, guid: 0cab47f904cc7cd449141e80a2e8ff98, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

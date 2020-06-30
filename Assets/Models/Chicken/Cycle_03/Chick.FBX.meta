@@ -2,8 +2,16 @@ fileFormatVersion: 2
 guid: 6cca1659cf9ab1e47aa1454871baac69
 ModelImporter:
   serializedVersion: 19300
-  internalIDToNameTable: []
-  externalObjects: {}
+  internalIDToNameTable:
+  - first:
+      74: 1827226128182048838
+    second: Take 001
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _Chick01___Default
+    second: {fileID: 2100000, guid: ca73fe966488c704788ab5c755a3b1d6, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
