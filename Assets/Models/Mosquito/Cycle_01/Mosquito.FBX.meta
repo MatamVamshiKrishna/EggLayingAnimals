@@ -6,15 +6,10 @@ ModelImporter:
   - first:
       74: 1827226128182048838
     second: Take 001
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: "\u6BDB"
-    second: {fileID: 2100000, guid: 9be31877a9f37df44b468ea6ff166470, type: 2}
+  externalObjects: {}
   materials:
-    materialImportMode: 2
-    materialName: 1
+    materialImportMode: 1
+    materialName: 0
     materialSearch: 1
     materialLocation: 0
   animations:
