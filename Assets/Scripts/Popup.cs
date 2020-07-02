@@ -12,20 +12,20 @@ public class Popup : MonoBehaviour
 #if UNITY_EDITOR
         if(Input.GetMouseButtonDown(0))
         {
-            if (selected != null)
-            {
-                selected.GetChild(0).transform.gameObject.SetActive(false);
-                selected = null;
-            }
+            
 
             var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit))
             {
-
+               
                 var _selected = hit.transform;
                 if (_selected.CompareTag(Tag))
                 {
+                    if (selected != null && selected != _selected)
+                    {
+                        selected.GetChild(0).transform.gameObject.SetActive(false);
+                    }
                     _selected.GetChild(0).transform.gameObject.SetActive(true);
                     selected = _selected;
 
@@ -37,11 +37,7 @@ public class Popup : MonoBehaviour
         if ((Input.GetTouch(0).phase == TouchPhase.Stationary) || (Input.GetTouch(0).phase == TouchPhase.Moved && Input.GetTouch(0).deltaPosition.magnitude < 1.2f))
         {
 
-            if (selected != null)
-            {
-                selected.GetChild(0).transform.gameObject.SetActive(false);
-                selected = null;
-            }
+           
 
             var ray1 = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
             RaycastHit hit1;
@@ -51,6 +47,10 @@ public class Popup : MonoBehaviour
                 var _selected = hit1.transform;
                 if (_selected.CompareTag(Tag))
                 {
+                     if (selected != null && selected != _selected)
+                     {
+                        selected.GetChild(0).transform.gameObject.SetActive(false);
+                     }
                     _selected.GetChild(0).transform.gameObject.SetActive(true);
                     selected = _selected;
 
