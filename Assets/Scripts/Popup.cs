@@ -10,25 +10,43 @@ public class Popup : MonoBehaviour
     private void Update()
     {
 #if UNITY_EDITOR
-        if(Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0))
         {
-            
+
 
             var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit))
             {
-               
+
                 var _selected = hit.transform;
                 if (_selected.CompareTag(Tag))
                 {
                     if (selected != null && selected != _selected)
                     {
-                        selected.GetChild(0).transform.gameObject.SetActive(false);
+                        if (selected.childCount != 0)
+                        {
+                            selected.GetChild(0).transform.gameObject.SetActive(false);
+                        }
+                        else
+                        {
+                            selected.parent.GetChild(0).transform.gameObject.SetActive(false);
+                        }
                     }
-                    _selected.GetChild(0).transform.gameObject.SetActive(true);
-                    selected = _selected;
 
+                    if (_selected.childCount != 0)
+                    {
+
+                        _selected.GetChild(0).transform.gameObject.SetActive(true);
+                       
+                    }
+                    else
+                    {
+
+                        _selected.parent.GetChild(0).transform.gameObject.SetActive(true);
+                      
+                    }
+                    selected = _selected;
                 }
             }
         }
@@ -45,15 +63,33 @@ public class Popup : MonoBehaviour
             {
 
                 var _selected = hit1.transform;
-                if (_selected.CompareTag(Tag))
+                 if (_selected.CompareTag(Tag))
                 {
-                     if (selected != null && selected != _selected)
-                     {
-                        selected.GetChild(0).transform.gameObject.SetActive(false);
-                     }
-                    _selected.GetChild(0).transform.gameObject.SetActive(true);
-                    selected = _selected;
+                    if (selected != null && selected != _selected)
+                    {
+                        if (selected.childCount != 0)
+                        {
+                            selected.GetChild(0).transform.gameObject.SetActive(false);
+                        }
+                        else
+                        {
+                            selected.parent.GetChild(0).transform.gameObject.SetActive(false);
+                        }
+                    }
 
+                    if (_selected.childCount != 0)
+                    {
+
+                        _selected.GetChild(0).transform.gameObject.SetActive(true);
+                       
+                    }
+                    else
+                    {
+
+                        _selected.parent.GetChild(0).transform.gameObject.SetActive(true);
+                      
+                    }
+                    selected = _selected;
                 }
             }
         }
@@ -61,8 +97,15 @@ public class Popup : MonoBehaviour
     }
     public void OnClickCloseButton()
     {
-        selected.GetChild(0).transform.gameObject.SetActive(false);
-       
+        if (selected.childCount != 0)
+        {
+            selected.GetChild(0).transform.gameObject.SetActive(false);
+        }
+        else
+        {
+            selected.parent.GetChild(0).transform.gameObject.SetActive(false);
+        }
+
     }
 }
 
