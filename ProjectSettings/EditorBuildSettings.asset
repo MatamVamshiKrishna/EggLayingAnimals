@@ -14,4 +14,25 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/4Stage.unity
     guid: 6546b7f6f6f99554fbadc71ccfc63879
+  - enabled: 1
+    path: Assets/Scenes/Activity/Activity.unity
+    guid: 97476fd0a89a24d4b8dc0be7ec79934c
+  - enabled: 1
+    path: Assets/Scenes/Activity/ActivityBeetle.unity
+    guid: 41dc92a2c39cb5341b68d09687384fc2
+  - enabled: 1
+    path: Assets/Scenes/Activity/ActivityButterfly.unity
+    guid: 59e116be5447f0347b5f1711c113b0c8
+  - enabled: 1
+    path: Assets/Scenes/Activity/ActivityCockroach.unity
+    guid: b0a808d1a348f4341a7c762ea8db5206
+  - enabled: 1
+    path: Assets/Scenes/Activity/ActivityFrog.unity
+    guid: dc9c857376043d4458afdb1d7ecc0824
+  - enabled: 1
+    path: Assets/Scenes/Activity/ActivityGrasshopper.unity
+    guid: a1d7358dbdf99404bb2f59db64df25d5
+  - enabled: 1
+    path: Assets/Scenes/Activity/ActivityMos.unity
+    guid: 0120a8acb6977ed4fb9aa2c4c8f18a63
   m_configObjects: {}
