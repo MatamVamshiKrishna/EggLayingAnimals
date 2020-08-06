@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/4Stage.unity
     guid: 6546b7f6f6f99554fbadc71ccfc63879
   - enabled: 1
-    path: Assets/Scenes/Activity/Activity.unity
+    path: Assets/Scenes/Activity/ActivityChicken.unity
     guid: 97476fd0a89a24d4b8dc0be7ec79934c
   - enabled: 1
     path: Assets/Scenes/Activity/ActivityBeetle.unity
