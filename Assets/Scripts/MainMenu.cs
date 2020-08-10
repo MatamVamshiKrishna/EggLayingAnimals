@@ -22,7 +22,7 @@ public class MainMenu : MonoBehaviour
 
     public void Activity()
     {
-        SceneManager.LoadScene("Activity");
+        SceneManager.LoadScene("ActivityChicken");
 
 
     }
